@@ -21,7 +21,7 @@
 
 #include <icd/osso-ic-ui-dbus.h>
 
-#define IAP_DIALOG_DEFINE(dialog, match) \
+#define IAP_DIALOGS_PLUGIN_DEFINE(dialog, match) \
 static gboolean \
 iap_dialog_##dialog##_show(void *iap_id, DBusMessage *message, \
                            void (*showing)(DBusMessage *), \
