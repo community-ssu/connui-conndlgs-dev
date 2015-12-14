@@ -48,7 +48,7 @@ clean:
 
 	dh_clean -pconnui-conndlgs-dev
 
-nstall: build
+install: build
 	dh_testdir
 	dh_testroot
 	dh_clean -k -pconnui-conndlgs-dev
