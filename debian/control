@@ -1,0 +1,12 @@
+Source: connui-conndlgs-dev
+Priority: optional
+Maintainer: Jonathan Wilson <jfwfreo@tpgi.com.au>
+Build-Depends: debhelper (>> 3.0.0), autotools-dev
+Standards-Version: 3.7.2
+Section: net
+
+Package: connui-conndlgs-dev
+Section: net
+Architecture: armel
+Depends:  libdbus-1-dev
+Description: Header file for linking to osso-connectivity-ui-conndlgs
