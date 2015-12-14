@@ -35,7 +35,6 @@ build-stamp: configure-stamp
 
 	# Add here commands to compile the package.
 	$(MAKE)
-	#docbook-to-man debian/libconnui-dev.sgml > libconnui-dev.1
 
 	touch build-stamp
 
@@ -47,16 +46,16 @@ clean:
 	# Add here commands to clean up after the build process.
 	$(MAKE) clean
 
-	dh_clean -plibconnui-dev
+	dh_clean -pconnui-conndlgs-dev
 
-install: build
+nstall: build
 	dh_testdir
 	dh_testroot
-	dh_clean -k -plibconnui-dev
+	dh_clean -k -pconnui-conndlgs-dev
 	dh_installdirs
 
-	# Add here commands to install the package into debian/libconnui-dev.
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/libconnui-dev
+	# Add here commands to install the package into debian/connui-conndlgs-dev.
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/connui-conndlgs-dev
 
 
 # Build architecture-independent files here.
